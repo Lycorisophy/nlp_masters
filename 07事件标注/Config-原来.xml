@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="GB2312" ?> 
+<root>
+	<AutoLabel>
+		<LabelItem Caption="label as denoter" parent="Event">Denoter</LabelItem>
+		<LabelItem Caption="label as time" parent="Event">Time</LabelItem>
+		<LabelItem Caption="label as location" parent="Event">Location</LabelItem>
+		<LabelItem Caption="label as participant" parent="Event">Participant</LabelItem>
+		<LabelItem Caption="label as object" parent="Event">Object</LabelItem>
+		<LabelItem Caption="label as event" parent="Sentence">Event</LabelItem>
+		<LabelItem Caption="label as sentence" parent="Paragraph">Sentence</LabelItem>
+		<LabelItem Caption="label as paragraph" parent="Content">Paragraph</LabelItem>
+		<LabelItem Caption="label as content" parent="Body">Content</LabelItem>
+		<LabelItem Caption="label as report time" parent="Body">ReportTime</LabelItem>
+		<LabelItem Caption="label as title" parent="Body">Title</LabelItem>
+		<LabelItem Caption="label as Body" parent="#Document">Body</LabelItem>
+	</AutoLabel>
+	<AutoComplete>
+		<CompleteItem Caption="type="> type=</CompleteItem>
+		<CompleteItem Caption="polarity=negative"> polarity="negative"</CompleteItem>
+		<CompleteItem Caption="type=origin"> type="origin"</CompleteItem>
+		<CompleteItem Caption="type=destination"> type="destination"</CompleteItem>
+		<CompleteItem Caption="type=agent"> type="agent"</CompleteItem>
+		<CompleteItem Caption="type=recipient"> type="recipient"</CompleteItem>
+		<CompleteItem Caption="split">====================</CompleteItem>
+		<CompleteItem Caption="type=emergency"> type="emergency"</CompleteItem>
+		<CompleteItem Caption="type=movement"> type="movement"</CompleteItem>
+		<CompleteItem Caption="type=statement"> type="statement"</CompleteItem>
+		<CompleteItem Caption="type=action"> type="action"</CompleteItem>
+		<CompleteItem Caption="type=operation"> type="operation"</CompleteItem>
+		<CompleteItem Caption="type=stateChange"> type="stateChange"</CompleteItem>
+		<CompleteItem Caption="type=perception"> type="perception"</CompleteItem>
+		<CompleteItem Caption="split">====================</CompleteItem>
+		<CompleteItem Caption="causal relation">&lt;eRelation relType="Causal" cause_eid="e" effect_eid="e"/&gt;</CompleteItem>
+	</AutoComplete>
+	<XMLFormat>
+		<head Caption="add XMLHead">&lt;?xml version="1.0" encoding="GB2312" ?&gt;</head>
+	</XMLFormat>
+</root>

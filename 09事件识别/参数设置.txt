@@ -1,0 +1,5 @@
+train_epochs = 210
+test_epochs = 90
+learning_rate = 0.001
+lstm = nn.LSTM(input_size=size, hidden_size=len_cate, num_layers=4, bidirectional=False)
+optimizer =torch.optim.Adam(lstm.parameters(), lr=learning_rate, betas=(0.9, 0.99))

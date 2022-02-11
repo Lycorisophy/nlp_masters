@@ -1,0 +1,1 @@
+model在word2vec的model文件夹内，复制过来

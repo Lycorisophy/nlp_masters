@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--DTD 由 XMLSpy v2006 U 创建 (http://www.altova.com)-->
+<!ELEMENT Body (Title, ReportTime, Content)>
+<!ELEMENT Content (#PCDATA | Paragraph)*>
+<!ELEMENT Denoter (#PCDATA)>
+<!ATTLIST Denoter
+	type CDATA #REQUIRED
+>
+<!ELEMENT Event (#PCDATA | Time | Denoter | Location | Participant | Object)*>
+<!ATTLIST Event
+	eid CDATA #REQUIRED
+>
+<!ELEMENT Location (#PCDATA)>
+<!ATTLIST Location
+	type CDATA #IMPLIED
+>
+<!ELEMENT Object (#PCDATA)>
+<!ELEMENT Paragraph (Sentence+)>
+<!ELEMENT Participant (#PCDATA)>
+<!ATTLIST Participant
+	type CDATA #IMPLIED
+>
+<!ELEMENT ReportTime (#PCDATA)>
+<!ATTLIST ReportTime
+	type CDATA #REQUIRED
+>
+<!ELEMENT Sentence (#PCDATA | Event)*>
+<!ELEMENT Time (#PCDATA)>
+<!ATTLIST Time
+	type CDATA #REQUIRED
+>
+<!ELEMENT Title (#PCDATA)>
